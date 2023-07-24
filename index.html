@@ -4,16 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal-Solution</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css and daisy ui links -->
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
+    <header class="container mx-auto">
+            <nav>
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                          <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg> -->
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a>Item 1</a></li>
+                          <li>
+                            <a>Parent</a>
+                            <ul class="p-2">
+                              <li><a>Submenu 1</a></li>
+                              <li><a>Submenu 2</a></li>
+                            </ul>
+                          </li>
+                          <li><a>Item 3</a></li>
+                        </ul>
+                      </div>
+                
+                        
+                        <img class="" src="./images/logo2.png" alt="">
+                     
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li tabindex="0">
+                          <details>
+                            <summary>Servives</summary>
+                            <ul class="p-2">
+                              <li><a>Submenu 1</a></li>
+                              <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                        </li>
+                        <li><a>Cases</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                      <a class="btn bg-yellow-700 text-white">Free Consultation</a>
+                    </div>
+                  </div>  
+            </nav>
 
+            <!-- banner section -->
+            <div class="container mx-auto">
+
+                <div class="hero min-h-screen" style="background-image: url(./images/banner.png);">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content text-justify text-neutral-content">
+                      <div class="text-center">
+                        <h1 class="mb-5 text-5xl md:text-7xl font-bold">We Provide Effective <br>
+                        Legal Solutions</h1>
+                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi <br> exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                      
+                      </div>
+                     
+                    </div>
+                  </div>
+
+                  <div class="justify-center -mt-24  md:-mt-48 flex items-center">
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-lg" />
+                    <button class="btn bg-yellow-700 px-8 ml-2 text-white border-none">Search</button>
+                  </div>
+            </div>
     </header>
     <main>
+        <!-- legal practice area section -->
+   <section class="container mx-auto my-72 text-center">
+    <div class="text-center space-y-7 md:my-12">
+        <h2 class="text-4xl font-bold">The Legal Practice Area</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quae sapiente <br>ecessitatibus eveniet accusantium ipsa dolor tempore nihil.</p>
+    </div>
+<!-- card section for section1 -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3  ">
+<!-- single card -->
+<div class="card  border border-b-2 py-10 border-t-white border-l-white space-y-5">
+    <figure class="px-10 pt-10">
+      <img src="./images/business.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center space-y-5">
+      <h2 class="text-4xl font-bold">business Law!</h2>
+      <p class="space-y-4">If a dog chews shoes whose shoes does he choose?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa voluptatibus hic nemo assumenda fuga!
+      </p>
+      <div class="card-actions">
+        <button class="btn bg-yellow-700 rounded-3xl"><i class="fa-solid text-white fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- single card -->
+<div class="card  border border-b-2 py-10 bg-gray-100 border-t-white border-l-white space-y-5">
+    <figure class="px-10 pt-10">
+      <img src="./images/business.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center space-y-5">
+      <h2 class="text-4xl font-bold">business Law!</h2>
+      <p class="space-y-4">If a dog chews shoes whose shoes does he choose?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa voluptatibus hic nemo assumenda fuga!
+      </p>
+      <div class="card-actions">
+        <button class="btn bg-yellow-700 rounded-3xl"><i class="fa-solid text-white fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- single card -->
+<div class="card  border border-b-2 py-10 border-t-white border-l-white space-y-5">
+    <figure class="px-10 pt-10">
+      <img src="./images/business.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center space-y-5">
+      <h2 class="text-4xl font-bold">business Law!</h2>
+      <p class="space-y-4">If a dog chews shoes whose shoes does he choose?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa voluptatibus hic nemo assumenda fuga!
+      </p>
+      <div class="card-actions">
+        <button class="btn bg-yellow-700 rounded-3xl"><i class="fa-solid text-white fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- single card -->
+<div class="card  border border-b-2 py-10 border-t-white border-l-white space-y-5">
+    <figure class="px-10 pt-10">
+      <img src="./images/business.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center space-y-5">
+      <h2 class="text-4xl font-bold">business Law!</h2>
+      <p class="space-y-4">If a dog chews shoes whose shoes does he choose?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa voluptatibus hic nemo assumenda fuga!
+      </p>
+      <div class="card-actions">
+        <button class="btn bg-yellow-700 rounded-3xl"><i class="fa-solid text-white fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- single card -->
+<div class="card border border-b-2 py-10 border-t-white border-l-white space-y-5">
+    <figure class="px-10 pt-10">
+      <img src="./images/business.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center space-y-5">
+      <h2 class="text-4xl font-bold">business Law!</h2>
+      <p class="space-y-4">If a dog chews shoes whose shoes does he choose?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa voluptatibus hic nemo assumenda fuga!
+      </p>
+      <div class="card-actions">
+        <button class="btn bg-yellow-700 rounded-3xl"><i class="fa-solid text-white fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- single card -->
+<div class="card border border-b-2 py-10 border-t-white border-l-white space-y-5">
+    <figure class="px-10 pt-10">
+      <img src="./images/business.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center space-y-5">
+      <h2 class="text-4xl font-bold">business Law!</h2>
+      <p class="space-y-4">If a dog chews shoes whose shoes does he choose?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa voluptatibus hic nemo assumenda fuga!
+      </p>
+      <div class="card-actions">
+        <button class="btn bg-yellow-700 rounded-3xl"><i class="fa-solid text-white fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
 
+
+</div>
+
+
+
+   </section>
+   <!-- slider section -->
+   <!-- slider desc -->
+   <section class="container mx-auto">
+    <div class="text-center space-y-7 md:my-12">
+        <h2 class="text-4xl font-bold">What Our Client Say</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quae sapiente <br>ecessitatibus eveniet accusantium ipsa dolor tempore nihil.</p>
+    </div>
+    <!-- slider start here -->
+ 
+    <div class="carousel w-full">
+
+        <!-- <div class="text-white text-center  font-bold space-y-7">
+            <img src="./images/client.png" alt="">
+            <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+            <p>UIX Designar</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam sed ad nisi, nemo, natus fugit id a, voluptas magni possimus molestias doloribus cum atque magnam nam delectus. Corporis, minima!</p>
+        </div> -->
+      <div id="slide1" class="carousel-item relative w-full ">
+     <img src="./images/banner.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/slider-1.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/slider-2.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./images/slider-3.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+      </div>
+   </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
